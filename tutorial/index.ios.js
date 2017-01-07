@@ -13,6 +13,12 @@ import {
 } from 'react-native';
 
 export default class tutorial extends Component {
+
+  constructor(){
+    super();
+
+  }
+
   render() {
     return (
       <View style={styles.container}>
