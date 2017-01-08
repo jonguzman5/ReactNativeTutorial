@@ -44,7 +44,7 @@ slidediv: {
 }
 button: {
   border: 4px solid green,
-  border-radius: 1em,
+  borderRadius: 1em,
   backgroundColor: lightgreen,
   width: 3em,
 }
