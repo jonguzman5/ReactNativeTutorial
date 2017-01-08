@@ -3,16 +3,32 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Image,
+  Button
 } from 'react-native';
 
 function Slide(props){
 
 return(
 <View>
-<Text>
-props
+<Text className="text">
+{props.slide.text}
 </Text>
+  <Image
+          style={{width: 50, height: 50}}
+          source={{uri: props.slide.image}}
+
+        />
+           <Button
+          onPress={() => {props.prevState()}}
+          title="Previous Slide"
+        />
+         <Button
+          onPress={() => {props.nextState()}}
+          title="Next Slide"
+        />
+
 </View>
 
   )
