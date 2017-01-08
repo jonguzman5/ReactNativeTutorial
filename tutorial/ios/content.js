@@ -7,22 +7,22 @@ export default  [
   {
     id:2,
     text:`Native is a framework for building mobile apps ... in JavaScript!!!
-          /n These are not mere mobile web applications but a stand-alone app,
+          These are not mere mobile web applications but a stand-alone app,
           running directly off your phone.`,
     img:""
   },
   {
     id:3,
     text:`What is the difference between ReactJS and React-Native?
-          /n ReactJS is a library, Native is a translator for your
-          personal library (app) into common languages (`,
+          ReactJS is a library, Native is a translator for your
+          personal library (app) into common languages (Android, iOS, Web)`,
     img:""
   },
   {
     id:4,
-    text:`REACT NATIVE IS GREAT /n It comes with build in functionality and components
+    text:`REACT NATIVE IS GREAT. It comes with build in functionality and components
          for text, maps, API calls, and as of yet undiscovered features.
-          /n You can even import legacy components from Java and C`,
+          You can even import legacy components from Java and C`,
     img:""
   },
   {
@@ -33,7 +33,7 @@ export default  [
   {
     id:6,
     text:`ReactJS and React Native code are 85% compatible across platforms.
-          /n What does that mean?`,
+          What does that mean?`,
     img:""
   },
   {
