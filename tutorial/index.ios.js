@@ -54,7 +54,7 @@ export default class tutorial extends Component {
             }
         });
        }
-       else if(this.state.currentSlide.index > 1 && this.state.currentSlide.index < 8){
+       else if(this.state.currentSlide.index > 1 && this.state.currentSlide.index < Content.length){
         this.setState({
          oldSlide: {
               index: Content[this.state.oldSlide.index ].id,
@@ -73,7 +73,7 @@ export default class tutorial extends Component {
             }
             });
        }
-       else if(this.state.currentSlide.index === 8){
+       else if(this.state.currentSlide.index === Content.length){
         this.setState({
              oldSlide: {
               index: Content[this.state.oldSlide.index ].id,
@@ -119,7 +119,7 @@ export default class tutorial extends Component {
             }
             });
        }
-       else if((this.state.currentSlide.index > 1 && this.state.currentSlide.index <= 8)  ){
+       else if((this.state.currentSlide.index > 1 && this.state.currentSlide.index <= Content.length)  ){
         this.setState({
          oldSlide: {
               index: Content[this.state.oldSlide.index - 2].id,
@@ -138,24 +138,24 @@ export default class tutorial extends Component {
             }
             });
        }
-       else if(this.state.currentSlide.index === 9){
+       else if(this.state.currentSlide.index === Content.length){
          this.setState({
-         oldSlide: {
-              index: Content[this.state.oldSlide.index - 2].id,
-              text: Content[this.state.oldSlide.index - 2].text,
-              image: Content[this.state.oldSlide.index - 2].image
-            },
-             currentSlide: {
-              index: Content[this.state.oldSlide.index -1].id,
-              text: Content[this.state.oldSlide.index - 1].text,
-              image: Content[this.state.oldSlide.index - 1 ].image
-            },
-             nextSlide: {
-              index: Content[this.state.oldSlide.index ].id,
-              text: Content[this.state.oldSlide.index ].text,
-              image: Content[this.state.oldSlide.index ].image
-            }
-            });
+           oldSlide: {
+                index: Content[this.state.oldSlide.index - 2].id,
+                text: Content[this.state.oldSlide.index - 2].text,
+                image: Content[this.state.oldSlide.index - 2].image
+              },
+               currentSlide: {
+                index: Content[this.state.oldSlide.index -1].id,
+                text: Content[this.state.oldSlide.index - 1].text,
+                image: Content[this.state.oldSlide.index - 1 ].image
+              },
+               nextSlide: {
+                index: Content[this.state.oldSlide.index ].id,
+                text: Content[this.state.oldSlide.index ].text,
+                image: Content[this.state.oldSlide.index ].image
+              }
+              });
        }
   }
 
@@ -177,6 +177,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'blue',
     opacity: 0.5,
   },
+  backgroundImage:{
+    justifyContent: 'center',
+    alignItems: 'center',
+    flex: 1,
+  },
   // button:{
   //   border: 4px solid green,
   //   'border-radius': 1em,
@@ -186,9 +191,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
-    // background: url('https://s-media-cache-ak0.pinimg.com/736x/25/17/12/251712967ce3b0436e43123e0c6785cf.jpg'),
-    // backgroundSize: "cover",
+    alignItems: 'center'
   },
   welcome: {
     fontSize: 20,
