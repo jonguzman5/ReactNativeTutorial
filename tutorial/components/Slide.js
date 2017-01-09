@@ -8,6 +8,20 @@ import {
   Button
 } from 'react-native';
 
+const styles = StyleSheet.create({
+  previous: {
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    color: 'red'
+  },
+  next: {
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start'
+  },
+});
+
 function Slide(props){
 
 return(
@@ -32,18 +46,6 @@ return(
 </View>
   )
 }
-const styles = StyleSheet.create({
-  previous: {
-    flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'flex-start',
-  },
-  next: {
-    flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'flex-start',
-  },
-});
 
 
 export default Slide;

@@ -46,12 +46,12 @@ export default class tutorial extends Component {
             currentSlide: {
               index: Content[this.state.currentSlide.index].id,
               text: Content[this.state.currentSlide.index ].text,
-              image: Content[this.state.currentSlide.index ].image
+              image: Content[this.state.currentSlide.index ].img //change back to image
             },
              nextSlide: {
               index: Content[this.state.nextSlide.index ].id,
               text: Content[this.state.nextSlide.index ].text,
-              image: Content[this.state.nextSlide.index ].image
+              image: Content[this.state.nextSlide.index ].img //change back to image
             }
         });
        }
@@ -60,17 +60,17 @@ export default class tutorial extends Component {
          oldSlide: {
               index: Content[this.state.oldSlide.index ].id,
               text: Content[this.state.oldSlide.index ].text,
-              image: Content[this.state.oldSlide.index ].image
+              image: Content[this.state.oldSlide.index ].img //change back to image
             },
              currentSlide: {
               index: Content[this.state.currentSlide.index ].id,
               text: Content[this.state.currentSlide.index ].text,
-              image: Content[this.state.currentSlide.index ].image
+              image: Content[this.state.currentSlide.index ].img //change back to image
             },
              nextSlide: {
               index: Content[this.state.nextSlide.index ].id,
               text: Content[this.state.nextSlide.index ].text,
-              image: Content[this.state.nextSlide.index ].image
+              image: Content[this.state.nextSlide.index ].img //change back to image
             }
             });
        }
@@ -79,12 +79,12 @@ export default class tutorial extends Component {
              oldSlide: {
               index: Content[this.state.oldSlide.index ].id,
               text: Content[this.state.oldSlide.index ].text,
-              image: Content[this.state.oldSlide.index ].image
+              image: Content[this.state.oldSlide.index ].img //change back to image
             },
    currentSlide: {
               index: Content[this.state.currentSlide.index ].id,
               text: Content[this.state.currentSlide.index ].text,
-              image: Content[this.state.currentSlide.index ].image
+              image: Content[this.state.currentSlide.index ].img //change back to image
             }
              });
        }
@@ -97,7 +97,7 @@ export default class tutorial extends Component {
         currentSlide: {
               index: Content[this.state.currentSlide.index - 1].id,
               text: Content[this.state.currentSlide.index - 1].text,
-              image: Content[this.state.currentSlide.index - 1].image
+              image: Content[this.state.currentSlide.index - 1].img //change back to image
             }
           });
        }
@@ -106,17 +106,17 @@ export default class tutorial extends Component {
          oldSlide: {
               index: Content[this.state.oldSlide.index - 1].id,
               text: Content[this.state.oldSlide.index - 1].text,
-              image: Content[this.state.oldSlide.index - 1].image
+              image: Content[this.state.oldSlide.index - 1].img //change back to image
             },
              currentSlide: {
               index: Content[this.state.oldSlide.index - 1].id,
               text: Content[this.state.oldSlide.index - 1].text,
-              image: Content[this.state.oldSlide.index - 1].image
+              image: Content[this.state.oldSlide.index - 1].img //change back to image
             },
              nextSlide: {
               index: Content[this.state.currentSlide.index - 1 ].id,
               text: Content[this.state.currentSlide.index - 1].text,
-              image: Content[this.state.currentSlide.index - 1].image
+              image: Content[this.state.currentSlide.index - 1].img //change back to image
             }
             });
        }
@@ -125,17 +125,17 @@ export default class tutorial extends Component {
          oldSlide: {
               index: Content[this.state.oldSlide.index - 2].id,
               text: Content[this.state.oldSlide.index - 2].text,
-              image: Content[this.state.oldSlide.index - 2].image
+              image: Content[this.state.oldSlide.index - 2].img //change back to image
             },
              currentSlide: {
               index: Content[this.state.oldSlide.index - 1].id,
               text: Content[this.state.oldSlide.index - 1].text,
-              image: Content[this.state.oldSlide.index - 1].image
+              image: Content[this.state.oldSlide.index - 1].img //change back to image
             },
              nextSlide: {
               index: Content[this.state.oldSlide.index - 1].id,
               text: Content[this.state.oldSlide.index - 1].text,
-              image: Content[this.state.oldSlide.index - 1].image
+              image: Content[this.state.oldSlide.index - 1].img //change back to image
             }
             });
        }
@@ -144,17 +144,17 @@ export default class tutorial extends Component {
            oldSlide: {
                 index: Content[this.state.oldSlide.index - 2].id,
                 text: Content[this.state.oldSlide.index - 2].text,
-                image: Content[this.state.oldSlide.index - 2].image
+                image: Content[this.state.oldSlide.index - 2].img //change back to image
               },
                currentSlide: {
                 index: Content[this.state.oldSlide.index -1].id,
                 text: Content[this.state.oldSlide.index - 1].text,
-                image: Content[this.state.oldSlide.index - 1 ].image
+                image: Content[this.state.oldSlide.index - 1 ].img //change back to image
               },
                nextSlide: {
                 index: Content[this.state.oldSlide.index ].id,
                 text: Content[this.state.oldSlide.index ].text,
-                image: Content[this.state.oldSlide.index ].image
+                image: Content[this.state.oldSlide.index ].img //change back to image
               }
               });
        }
