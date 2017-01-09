@@ -8,6 +8,7 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
+  Image,
   Text,
   View
 } from 'react-native';
@@ -161,44 +162,26 @@ export default class tutorial extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <Image source={require('./images/slideshowbackground.jpg')} style={styles.container}>
         <Slide
         nextState={this.nextState}
         slide={this.state.currentSlide}
         prevState={this.prevState}
         />
-      </View>
+      </Image>
     );
   }
 }
 
 const styles = StyleSheet.create({
-slidediv: {
-  backgroundColor: lightblue,
-  opacity: 0.5,
-}
-button: {
-  border: 4px solid green,
-  borderRadius: 1em,
-  backgroundColor: lightgreen,
-  width: 3em,
-}
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    background: url('https://s-media-cache-ak0.pinimg.com/736x/25/17/12/251712967ce3b0436e43123e0c6785cf.jpg'),
-    backgroundSize: cover,
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+    width: null,
+    height: null,
+    backgroundColor: 'rgba(0,0,0,0)',
+    resizeMode: 'stretch',
   },
 });
 

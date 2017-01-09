@@ -12,27 +12,38 @@ function Slide(props){
 
 return(
 <View>
-<Text className="text">
-{props.slide.text}
-</Text>
   <Image
-          style={{width: 50, height: 50}}
-          source={{uri: props.slide.image}}
-
-        />
-           <Button
-          onPress={() => {props.prevState()}}
-          title="Previous Slide"
-        />
-         <Button
-          onPress={() => {props.nextState()}}
-          title="Next Slide"
-        />
-
+    source={{uri: props.slide.image}}
+    style={{width: 50, height: 50, alignSelf: 'center'}}
+  />
+  <Text className="text">
+    {props.slide.text}
+  </Text>
+  <Button
+    onPress={() => {props.prevState()}}
+    title="<"
+    style={styles.previous}
+  />
+  <Button
+    onPress={() => {props.nextState()}}
+    title=">"
+    style={styles.next}
+   />
 </View>
-
   )
-
 }
+const styles = StyleSheet.create({
+  previous: {
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+  },
+  next: {
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+  },
+});
+
 
 export default Slide;
