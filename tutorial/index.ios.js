@@ -157,6 +157,8 @@ export default class tutorial extends Component {
               }
               });
        }
+       ;
+
   }
 
   render() {

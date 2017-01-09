@@ -11,6 +11,7 @@ export default  [
       they are stand-alone apps, running directly off your phone.`,
     img:""
   },
+
   {
     id:3,
     text:`What is the difference between ReactJS and React-Native?
@@ -98,12 +99,12 @@ export default  [
   },
   {
     id:15,
-    text:``,
+    text:`How can you get started with Native?`,
     img:""
   },
   {
     id:22,
-    text:``,
+    text:`Check the docs. `,
     img:""
   },
   {
