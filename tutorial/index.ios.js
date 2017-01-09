@@ -8,6 +8,7 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
+  Image,
   Text,
   View
 } from 'react-native';
@@ -163,48 +164,27 @@ export default class tutorial extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <Image source={require('./images/slideshowbackground.jpg')} style={styles.container}>
         <Slide
         nextState={this.nextState}
         slide={this.state.currentSlide}
         prevState={this.prevState}
         />
-      </View>
+      </Image>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  slidediv: {
-    backgroundColor: 'blue',
-    opacity: 0.5,
-  },
-  backgroundImage:{
-    justifyContent: 'center',
-    alignItems: 'center',
-    flex: 1,
-  },
-  // button:{
-  //   border: 4px solid green,
-  //   'border-radius': 1em,
-  //   backgroundColor: lightgreen,
-  //   width: 3em,
-  // },
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+    alignItems: 'center',
+    width: null,
+    height: null,
+    backgroundColor: 'rgba(0,0,0,0)',
+    resizeMode: 'stretch',
+  }
 });
 
 AppRegistry.registerComponent('tutorial', () => tutorial);
